@@ -7,7 +7,7 @@ R="\e[31m"
 G="\e[32m"
 N="\e[0m"
 
-echo "Script execution has started $TIMESTAMP" &>> LOGS
+echo "Script execution has started $TIMESTAMP" &>> $LOGS
 
 validate(){
    if [ $1 -ne 0 ]
