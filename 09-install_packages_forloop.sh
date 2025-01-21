@@ -1,5 +1,5 @@
 #!/bin/bash
-
+ID=$(id -u)
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
@@ -21,10 +21,10 @@ VALIDATE(){
 
 if [ $ID -ne 0 ]
 then 
-    echo -e "$R ERROR: Run the script with new user $N"
+    echo "ERROR: Run the script with new user"
     exit 1
 else
-    echo "$G you are a root user $N"
+    echo "you are a root user"
 fi 
 
 # echo "all argument passed: $@"
